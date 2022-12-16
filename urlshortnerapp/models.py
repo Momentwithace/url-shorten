@@ -7,3 +7,6 @@ class Url(models.Model):
     uuid = models.CharField(max_length=10)
 
     objects = models.Manager()
+
+    def __str__(self):
+        return self.uuid
